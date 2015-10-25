@@ -3,14 +3,25 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
-    <!--DataTables-->
+    <link href="css/styles.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="http://cdn.datatables.net/1.10.9/css/jquery.dataTables.min.css">
 
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script src="http://cdn.datatables.net/1.10.9/js/jquery.dataTables.min.js"></script>
+    <script src="datatable.js"></script>
+
+      <script type="text/javascript" language="javascript" class="init">
+          $(document).ready(function() {
+          $('#datatablez').DataTable( {
+              "ajax": 'data/array.txt'
+          } );
+      } );
+      </script>
 
   </head>
   <body>
-    <div class="header">
+    <!--<div class="header">
       <h1> New York City: Leading Causes of Death</h1>
       <p> The graphs below show the top 5 causes of death in New York City from 2007-2011.</p>
     </div>
@@ -40,9 +51,9 @@
         <div id="pie5" style="min-width: 155px; height: 200px; max-width: 300px; margin: 0 auto"></div>
       </div>
       <div class="col-md-1"></div>
-    </div>
+    </div>-->
     <!--datatable-->
-    <table id="datatables" class="display" cellspacing="0" width="100%"></table>
+    <table id="datatablez" class="display" cellspacing="0" width="100%"></table>
     <thead>
         <tr>
             <th>Cause of Death</th>
@@ -74,8 +85,9 @@
       </tbody>
   </table>
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+
     <script src="http://code.highcharts.com/highcharts.js"></script>
+
     <script src="http://code.highcharts.com/modules/exporting.js"></script>
 
     <script src="basicline.js"></script>
@@ -86,15 +98,7 @@
     <script src="pie4.js"></script>
     <script src="pie5.js"></script>
 
-    <!--DataTables-->
-        <script src="http://cdn.datatables.net/1.10.9/js/jquery.dataTables.min.js"></script>
-        <script src="datatable.js"></script>
-        <script>
-        $(document).ready(function() {
-          $('#datatables').DataTable();
-        } );
-        </script>
-
+<!--dataTables-->
 
 
     </body>

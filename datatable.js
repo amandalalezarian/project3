@@ -13,6 +13,7 @@ function parseData(){
     $('#people').innerHTML(htmlTable);
     $('#example').DataTable();
 }
-$(document).ready(function() {
-  $('#datatable').DataTable();
-} );
+
+// $(document).ready(function() {
+//   $('#datatables').DataTable();
+// } );
