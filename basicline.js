@@ -5,7 +5,7 @@ $(function () {
             x: -20 //center
         },
         subtitle: {
-            text: 'Source: Data.Gov',
+            text: 'Mouse over to see the number of deaths each year',
             x: -20
         },
         xAxis: {

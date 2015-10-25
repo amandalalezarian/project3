@@ -8,27 +8,33 @@
     <link rel="stylesheet" type="text/css" href="http://cdn.datatables.net/1.10.9/css/jquery.dataTables.min.css">
   </head>
   <body>
-    <h1> New York City: Top 5 Causes of Death</h1>
-    <div id="basicline" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div>
+    <div class="header">
+      <h1> New York City: Leading Causes of Death</h1>
+      <p> The graphs below show the top 5 causes of death in New York City from 2007-2011.</p>
+    </div>
+      <div id="basicline" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto">
+      </div>
+      <div> Death has decreased by 6.22%
+      </div>
     <div id="basiccolumn" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
-    <h3 align="center"> Cause of Death by Ethnicity</h3>
+    <h4 align="center"> Cause of Death by Ethnicity</h4>
     <div class="pies">
-      <div class="col-md-4">
+      <div class="col-md-4 col-sm-6">
         <div id="pie" style="min-width: 155px; height: 200px; max-width: 300px; margin: 0 auto"></div>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 col-sm-6">
         <div id="pie2" style="min-width: 155px; height: 200px; max-width: 300px; margin: 0 auto"></div>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 col-sm-6">
         <div id="pie3" style="min-width: 155px; height: 200px; max-width: 300px; margin: 0 auto"></div>
       </div>
     </div>
     <div>
       <div class="col-md-1"></div>
-      <div class="col-md-5">
+      <div class="col-md-5 col-sm-6">
         <div id="pie4" style="min-width: 155px; height: 200px; max-width: 300px; margin: 0 auto"></div>
       </div>
-      <div class="col-md-5">
+      <div class="col-md-5 col-sm-12">
         <div id="pie5" style="min-width: 155px; height: 200px; max-width: 300px; margin: 0 auto"></div>
       </div>
       <div class="col-md-1"></div>
@@ -39,21 +45,19 @@
         <tr>
             <th>Cause of Death</th>
             <th>Ethnicity</th>
-            <th>Count</th>
+            <th>Gender</th>
             <th>Year</th>
-            <th>Sex</th>
-            <th>Salary</th>
+            <th>Count</th>
         </tr>
     </thead>
 
     <tfoot>
         <tr>
-            <th>Name</th>
-            <th>Position</th>
-            <th>Office</th>
-            <th>Age</th>
-            <th>Start date</th>
-            <th>Salary</th>
+          <th>Cause of Death</th>
+          <th>Ethnicity</th>
+          <th>Gender</th>
+          <th>Year</th>
+          <th>Count</th>
         </tr>
     </tfoot>
 
@@ -64,7 +68,6 @@
             <td>Edinburgh</td>
             <td>61</td>
             <td>2011/04/25</td>
-            <td>$320,800</td>
         </tr>
       </tbody>
   </table>-->

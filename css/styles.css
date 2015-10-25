@@ -2,3 +2,11 @@ h1 {
   font-family: "Georgia";
   font-style: italic;
 }
+
+.header {
+  margin-left: 20px;
+}
+
+p, h4 {
+  font-family: "Georgia";
+}

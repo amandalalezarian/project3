@@ -7,7 +7,7 @@ $(function () {
             text: 'Top 5 Causes of Death'
         },
         subtitle: {
-            text: 'Source: Data.Gov'
+            text: 'Mouse over to see percent of the leading causes of death by year or click on the legend to take away cause group'
         },
         xAxis: {
             categories: [
