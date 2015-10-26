@@ -1,4 +1,10 @@
 $(function () {
+
+  Highcharts.setOptions({
+		lang: {
+			thousandsSep: ','
+		}
+	});
     $('#basicline').highcharts({
         title: {
             text: 'Death Trend',
@@ -8,6 +14,7 @@ $(function () {
             text: 'Mouse over to see the number of deaths each year',
             x: -20
         },
+
         xAxis: {
             categories: ['2007', '2008', '2009', '2010', '2011']
         },
@@ -22,7 +29,7 @@ $(function () {
             }]
         },
         tooltip: {
-            valueSuffix: ' Deaths'
+            valueSuffix: ' Deaths',
         },
         legend: {
             layout: 'vertical',
