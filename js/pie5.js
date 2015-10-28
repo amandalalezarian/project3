@@ -34,9 +34,7 @@ $(function () {
                     y: 5.29
                 }, {
                     name: "Hispanic",
-                    y: 17.10,
-                    sliced: true,
-                    selected: true
+                    y: 17.10
                 }, {
                     name: "Black",
                     y: 22.91

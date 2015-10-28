@@ -1,4 +1,4 @@
-h1, h4 {
+h1, h3, h4 {
   font-family: "Georgia";
     font-style: italic;
 }
@@ -31,4 +31,18 @@ p {
 .attribution {
   font-size: 11px;
   font-family: "Georgia serif";
+}
+
+.topfive {
+  border: 2px solid #e2e2e2;
+  padding-left: 15px;
+  padding-bottom: 10px;
+}
+
+.footer {
+    display: inline-block;
+}
+
+.tooltiptext{
+    display: none;
 }

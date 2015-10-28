@@ -12,12 +12,12 @@ Highcharts.createElement('link', {
 
 
 Highcharts.theme = {
-	colors: ["#CFDBEB", "#007192", "#BEBCA2", "#BC3C40", "#D09A49", "#ff0066", "#eeaaee",
+	colors: ["#007192", "#CFDBEB", "#BEBCA2", "#BC3C40", "#D09A49", "#ff0066", "#eeaaee",
 		"#55BF3B", "#DF5353", "#7798BF", "#aaeeee"],
 	chart: {
 		backgroundColor: null,
 		style: {
-			fontFamily: "Signika, serif"
+			fontFamily: "Georgia"
 		}
 	},
 	title: {
@@ -38,7 +38,7 @@ Highcharts.theme = {
 	legend: {
 		itemStyle: {
 			fontWeight: 'bold',
-			fontSize: '13px'
+			fontSize: '12px'
 		}
 	},
 	xAxis: {

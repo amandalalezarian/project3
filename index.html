@@ -5,37 +5,82 @@
     <link href="css/styles.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="http://cdn.datatables.net/1.10.9/css/jquery.dataTables.min.css">
+    <link type="text/css" rel="stylesheet" href="http://cdn.jsdelivr.net/qtip2/2.2.1/jquery.qtip.css" />
 
       <!--scripts-->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
       <script src="js/bootstrap.min.js"></script>
     </head>
-
   <body>
     <div class="container">
     <div class="header">
-      <img src="images/nyt.png">
+      <img src="images/nyt.png" width="100%">
       <div class="topline"></div>
-      <p class="header"><b>HEALTH</b> BY THE NUMBERS<p>
+      <p class="header"><b>N.Y. /</b> BY THE NUMBERS<p>
       <h1> New York City: Leading Causes of Death</h1>
       <div class="line"></div>
       <p class="attribution"> <b> By AMANDA LALEZARIAN </b>      OCTOBER 28, 2015 <p>
       <p> The graphs below show the top 5 causes of death in New York City from 2007-2011.</p>
     </div>
-      <div class="col-md-9" id="basicline" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto">
+    <div class="row">
+      <div class="col-md-7">
+        <div id="basicline" style="min-width: 310px; height: 400px; max-width: 600px"></div>
       </div>
-      <div> Death has decreased by 6.22%
+      <div class="col-md-5">
+        <div class="topfive">
+          <h4>Death has decreased by 6.22%</h4>
+        </div>
+        <br>
+        <div class="topfive">
+        <h3>Top 5 Causes of Death</h3>
+          <p>Hover over each item to learn more</p>
+        <h4 id="heart">1. Diseases of Heart</h4>
+        <div class="tooltiptext">
+          <b>Diseases of Heart</b> <i>Many of these deaths can be prevented if<br>people quit smoking, have healthier diets<br>and become more physically active.</i>
+        </div>
+        <h4 id="neoplasms">2. Malignant Neoplasms</h4>
+        <div class="tooltiptext">
+          <b>Malignant Neoplasms</b> <i>A disease in which abnormal cells divide uncontrollably and destroy body tissue (cancer).</i>
+        </div>
+        <h4 id="flu">3. Influenza & Pneumonia</h4>
+        <div class="tooltiptext">
+          <b>Influenza & Pneumonia</b> <i>Many of these deaths can be prevented if<br>people quit smoking, have healthier diets<br>and become more physically active.</i>
+        </div>
+        <h4 id="diabetes">4. Diabetes Mellitus</h4>
+        <div class="tooltiptext">
+          <b>Diabetes Mellitus</b> <i>Many of these deaths can be prevented if<br>people quit smoking, have healthier diets<br>and become more physically active.</i>
+        </div>
+        <h4 id="respiratory">5. Chronic Lower Respiratory</h4>
+        <div class="tooltiptext">
+          <b>Chronic Lower Respiratory</b> <i>Many of these deaths can be prevented if<br>people quit smoking, have healthier diets<br>and become more physically active.</i>
+        </div>
       </div>
-    <div class="col-md-9" id="basiccolumn" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
-    <div class="pies col-md-3">
+      </div>
+  </div>
+    <div id="basiccolumn" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+    <div class="row">
+    <div class="col-md-7">
+      <div>
       <h4 align="center"> Cause of Death by Ethnicity</h4>
-        <div id="pie" style="min-width: 155px; height: 200px; max-width: 300px; margin: 0 auto"></div>
-        <div id="pie2" style="min-width: 155px; height: 200px; max-width: 300px; margin: 0 auto"></div>
-        <div id="pie3" style="min-width: 155px; height: 200px; max-width: 300px; margin: 0 auto"></div>
-        <div id="pie4" style="min-width: 155px; height: 200px; max-width: 300px; margin: 0 auto"></div>
-        <div id="pie5" style="min-width: 155px; height: 200px; max-width: 300px; margin: 0 auto"></div>
+        <div class="row">
+          <div class="col-md-6" id="pie" style="min-width: 155px; height: 200px; max-width: 300px; margin: 0 auto"></div>
+          <div class="col-md-6" id="pie2" style="min-width: 155px; height: 200px; max-width: 300px; margin: 0 auto"></div>
+        </div>
+        <div class="row">
+          <div class="col-md-6" id="pie3" style="min-width: 155px; height: 200px; max-width: 300px; margin: 0 auto"></div>
+          <div class="col-md-6" id="pie4" style="min-width: 155px; height: 200px; max-width: 300px; margin: 0 auto"></div>
+        </div>
+          <div id="pie5" style="min-width: 155px; height: 200px; max-width: 300px; margin: 0 auto"></div>
+        </div>
     </div>
+      <div class="col-md-5">
+        <div class="topfive">
+          <p>African Americans are from 1.4 to 2.2 times more likely to have diabetes than white persons.</p>
+        </div>
+    </div>
+  </div>
     <!--data table-->
+    <div>
     <h3>Number of Deaths in NYC by Year from 2007 to 2011</h3>
         <table id="example" class="display" cellspacing="0" width="100%">
           <thead>
@@ -57,21 +102,25 @@
             </tr>
           </tfoot>
         </table>
+        <img class="footer" src="images/footer.png" width="80%">
         </div>
+      </div>
       <!--<p>*No. of houses sold in thousands</p>-->
 
     <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script> -->
     <script src="http://code.highcharts.com/highcharts.js"></script>
     <script src="http://code.highcharts.com/modules/exporting.js"></script>
+    <script type="text/javascript" src="http://cdn.jsdelivr.net/qtip2/2.2.1/jquery.qtip.js"></script>
 
-    <script src="/js/basicline.js"></script>
-    <script src="/js/basiccolumn.js"></script>
-    <script src="/js/pie.js"></script>
-    <script src="/js/pie2.js"></script>
-    <script src="/js/pie3.js"></script>
-    <script src="/js/pie4.js"></script>
-    <script src="/js/pie5.js"></script>
-    <script src="/js/theme.js"></script>
+    <script src="js/basicline.js"></script>
+    <script src="js/basiccolumn.js"></script>
+    <script src="js/pie.js"></script>
+    <script src="js/pie2.js"></script>
+    <script src="js/pie3.js"></script>
+    <script src="js/pie4.js"></script>
+    <script src="js/pie5.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/hover.js"></script>
 
     <!--dataTables-->
         <script type="text/javascript" language="javascript" class="init">
