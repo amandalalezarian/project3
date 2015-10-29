@@ -14,7 +14,8 @@
   <body>
     <div class="container">
     <div class="header">
-      <img src="images/nyt.png" width="100%">
+      <img class="hidden-xs" src="images/header.png" width="100%">
+      <img class="hidden-lg hidden-md hidden-sm" src="images/mobileheader.png" width="100%">
       <div class="topline"></div>
       <p class="header"><b>N.Y. /</b> BY THE NUMBERS<p>
       <h1> New York City: Leading Causes of Death</h1>
@@ -28,7 +29,7 @@
       </div>
       <div class="col-md-5">
         <div class="topfive">
-          <h4>Death has decreased by 6.22%</h4>
+          <h3>Death decreased by 6.22%</h3>
         </div>
         <br>
         <div class="topfive">
@@ -36,23 +37,23 @@
           <p>Hover over each item to learn more</p>
         <h4 id="heart">1. Diseases of Heart</h4>
         <div class="tooltiptext">
-          <b>Diseases of Heart</b> <i>Many of these deaths can be prevented if<br>people quit smoking, have healthier diets<br>and become more physically active.</i>
+          <b>Diseases of Heart:</b> <i>Heart disease is a result of plaque buildup in your coronary arteries. Heart disease remains the leading cause of death in New York City, and more than 18,000 New Yorkers die from heart disease and stroke each year. There are many types of heart disease, the number one killer being Coronary Artery Disease which affects more than 13 million Americans. Many of these deaths can be prevented if people quit smoking, have healthier diets and become more physically active.</i>
         </div>
         <h4 id="neoplasms">2. Malignant Neoplasms</h4>
         <div class="tooltiptext">
-          <b>Malignant Neoplasms</b> <i>A disease in which abnormal cells divide uncontrollably and destroy body tissue (cancer).</i>
+          <b>Malignant Neoplasms:</b> <i>A disease in which abnormal cells divide uncontrollably and destroy body tissue, also known as cancer. Possible signs and symptoms include: a new lump, abnormal bleeding, a prolonged cough, unexplained weight loss, and a change in bowel movements among others.</i>
         </div>
         <h4 id="flu">3. Influenza & Pneumonia</h4>
         <div class="tooltiptext">
-          <b>Influenza & Pneumonia</b> <i>Many of these deaths can be prevented if<br>people quit smoking, have healthier diets<br>and become more physically active.</i>
+          <b>Influenza & Pneumonia:</b> <i>Influenza (the flu) is an infection mainly affecting the nose, throat, airways, and lungs. Pneumonia is an inflammation of one or both lungs, usually caused by an infection. The risk of death from pneumonia or influenza is higher for people with heart disease, diabetes, or weakened immune systems such as from AIDS.</i>
         </div>
         <h4 id="diabetes">4. Diabetes Mellitus</h4>
         <div class="tooltiptext">
-          <b>Diabetes Mellitus</b> <i>Many of these deaths can be prevented if<br>people quit smoking, have healthier diets<br>and become more physically active.</i>
+          <b>Diabetes Mellitus:</b> <i>A chronic, lifelong condition that affects your body's ability to use the energy found in food. With diabetes mellitus, either your body doesn't make enough insulin, it can't use the insulin it does produce, or a combination of both.</i>
         </div>
         <h4 id="respiratory">5. Chronic Lower Respiratory</h4>
         <div class="tooltiptext">
-          <b>Chronic Lower Respiratory</b> <i>Many of these deaths can be prevented if<br>people quit smoking, have healthier diets<br>and become more physically active.</i>
+          <b>Chronic Lower Respiratory:</b> <i>Diseases that affect the lungs. The most deadly of these is chronic obstructive pulmonary disease (COPD), including emphysema & chronic bronchitis, which makes it hard to breathe.</i>
         </div>
       </div>
       </div>
@@ -74,13 +75,18 @@
         </div>
     </div>
       <div class="col-md-5">
-        <div class="topfive">
-          <p>African Americans are from 1.4 to 2.2 times more likely to have diabetes than white persons.</p>
+        <div class="topfive diabetes">
+          <h3>Why is diabetes more prevalent in blacks?</h3>
+          <p>Minorities have a higher prevalence of diabetes-related complications and death than whites. Disparities in health care quality and outcomes might result from variations in how health care is provided to people of different racial and ethnic backgrounds. Diabetes, the sixth leading cause of death in the United States, is a chronic disease characterized by persistent hyperglycemia (high blood glucose levels).</p>
         </div>
+        <div class="topfive accidents">
+          <h3>What about accidents?</h3>
+          <p>On average, deaths due to accidents accounted for 2%. Accidents, excluding drug poisoning, include people run over by cars, buses or taxis. smoke and flames of fires, or they fall at construction sites or in their own backyards. Others are hit by trains, drown at beaches or crash their bicycles.</p>
+        </div>
+      </div>
     </div>
-  </div>
     <!--data table-->
-    <div>
+    <div class="row">
     <h3>Number of Deaths in NYC by Year from 2007 to 2011</h3>
         <table id="example" class="display" cellspacing="0" width="100%">
           <thead>
@@ -102,9 +108,13 @@
             </tr>
           </tfoot>
         </table>
-        <img class="footer" src="images/footer.png" width="80%">
+        <div class="citations">
+          <p>All data and material from this page has been extracted from a public dataset on <a href="http://catalog.data.gov/dataset/new-york-city-leading-causes-of-death-ce97f">Data.gov</a>, <a href="http://www.webmd.com/heart-disease/guide/heart-disease-coronary-artery-disease">WebMD.com</a>, <a href="http://womenshealth.gov/mens-health/top-health-concerns-for-men/influenza-pneumonia.html">WomensHealth.org</a> & <a href="http://archive.ahrq.gov/research/findings/factsheets/diabetes/diabdisp/diabdisp.html">HHS.gov</a></p>
         </div>
-      </div>
+        <img class="footer hidden-xs" src="images/footer.png" width="100%">
+        <img class="mobilefooter hidden-lg hidden-md hidden-sm" src="images/mobilefooter.png" width="100%">
+        </div>
+    </div>
       <!--<p>*No. of houses sold in thousands</p>-->
 
     <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script> -->
